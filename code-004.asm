@@ -1,3 +1,5 @@
+; bitwise operations
+
 ; ~(((0xE2 | 0xF2) ^ (~0x3E)) << 5)
 
 
