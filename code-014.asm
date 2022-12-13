@@ -1,0 +1,32 @@
+;5: ((~(~0x3E)) ^ (0x6D | (~0xDB))) | (1 << 1)
+
+; solution #4
+
+MOV A, 0x50
+SHL A, 0x02
+
+; solution #1
+MOV A, 0xDB 
+NOT A
+OR A, 0x6D
+XOR A, 0x3E
+OR A, 0x02
+SHL A, 0x02
+
+; solution #2
+
+MOV A, 0x3E
+NOT A
+NOT A
+MOV B, 0x24
+OR B, 0x6D
+XOR A, B
+SHL A, 2
+
+; solution #3
+
+MOV A, 0x3E
+MOV B, 0x6D
+XOR A, B
+SHL A, 0x02
+
