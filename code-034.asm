@@ -3,11 +3,11 @@
 ; output -> D, ASCII code for uppercase
 
 MOV A, 98
-CALL to_lower
+CALL to_upper
 HLT
 
 
-to_lower:
+to_upper:
     ; if a>=97 and a<=122
     CMP A, 97
     JB eof
