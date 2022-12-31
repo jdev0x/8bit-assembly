@@ -20,7 +20,7 @@ main:
     MOV A, 75 
     MOV B, 232 
     
-    CM2P A, 75
+    CMP A, 75
     JB print_a
     CMP A, 75
     JE print_b
