@@ -1,4 +1,4 @@
-JMP code
+JMP code  
 
 message: db "Welcome to Assembly"
          db 0
